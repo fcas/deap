@@ -105,6 +105,7 @@ todo_include_todos = True
 
 # Search in python documentation
 intersphinx_mapping = {'python': ('http://docs.python.org/', None),
+                       'moocore': ('https://multi-objective.github.io/moocore/python/', None),
                        'numpy': ('http://docs.scipy.org/doc/numpy', None)}
 
 # Reload the cached values every 5 days
@@ -131,6 +132,7 @@ plot_html_show_formats = True
 
 # -- Options for extlinks extension ----------------------------------------------
 import subprocess
+import os
 tree = os.getenv('GITHUB_COMMIT')
 if tree is None:
     try:
